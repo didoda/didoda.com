@@ -1,0 +1,26 @@
+{
+  "name": "didoda",
+  "version": "1.0.0",
+  "description": "Dante Di Domenico website",
+  "main": "index.js",
+  "author": "Dante Di Domenico",
+  "license": "MIT",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "autoprefixer": "^10.3.7",
+    "js-cookie": "^3.0.1",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16",
+    "vite": "^2.6.5",
+    "vue": "^3.2.19",
+    "vue-i18n": "^9.1.9"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^2.4.0"
+  }
+}
