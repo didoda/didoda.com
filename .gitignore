@@ -1,3 +1,6 @@
 node_modules
-public
+public/assets/*
+public/manifest.json
+public/robots.txt
+public/sitemap.xml.gz
 *.log
