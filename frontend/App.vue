@@ -1,18 +1,17 @@
 <template>
     <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
         <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-            <!-- <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div> -->
             <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
                 <div class="max-w-md mx-auto">
                     <div class="grid grid-cols-5">
                         <div>
-                            <img alt="{{ t('name') }}" src="./img/dante.gif" class="h-12 sm:h-12" />
+                            <img src="./img/dante.gif" class="h-12 sm:h-12" />
                         </div>
                         <div>
-                            <img alt="{{ t('name') }}" src="./img/ddd.jpg" class="h-12 sm:h-12" />
+                            <img src="./img/ddd.jpg" class="h-12 sm:h-12" />
                         </div>
                         <div class="col-span-2">
-                            {{ t('name') }}
+                            {{ name }}
                         </div>
                         <div>
                             <select v-model="locale">
@@ -63,7 +62,7 @@
                             </p>
                         </div>
                         <div class="pt-6 text-base leading-6 sm:text-lg sm:leading-7">
-                            <p>© {{ website }} <sup>{{ version }}</sup> - <a href="mailto:dante(at)didoda.com">{{ t('name') }}</a></p>
+                            <p>© {{ website }} <sup>{{ version }}</sup> - <a href="mailto:dante(at)didoda.com">{{ name }}</a></p>
                         </div>
                     </div>
                 </div>
@@ -95,6 +94,7 @@ export default {
         ],
         website: 'www.didoda.com',
         version: '4.0',
+        name: 'Dante Di Domenico',
       };
   }
 }
@@ -102,7 +102,6 @@ export default {
 
 <i18n lang="yaml">
 en:
-    name: Dante Di Domenico
     birth: Born on 11th of October 1978
     citizenship: Italian
     address: Bologna, Italy
@@ -112,7 +111,6 @@ en:
     thesis_lls: 'Thesis work: "Os Lusíadas - Sources and places of Italian Literature in Camões works"'
     profession: 'Profession: Web Developer'
 es:
-    name: Dante Di Domenico
     birth: Nacido el 11 de octubre de 1978
     citizenship: Italiano
     address: Bologna, Italia
@@ -122,7 +120,6 @@ es:
     thesis_lls: 'Trabajo de fin de carrera: "Os Lusíadas - Fuentes y lugares de Literatura Italiana en la obra de Camões"'
     profession: 'Profesión: Programador Web'
 fi:
-    name: Dante Di Domenico
     birth: Syntynyt 11 Lokakuuta 1978
     citizenship: Italialainen
     address: Bologna, Italia
@@ -132,7 +129,6 @@ fi:
     thesis_lls: 'Pro gradu työ: "Os Lusíadas - Italialaisen kirjallisuuden lähteet ja paikat Camõesin työssä"'
     profession: 'Ammatti: Web ohjelmoija'
 it:
-    name: Dante Di Domenico
     birth: Nato il 11 Ottobre 1978
     citizenship: Italiano
     address: Bologna, Italia
@@ -142,7 +138,6 @@ it:
     thesis_lls: Tesi di laurea dal titolo "Os Lusíadas - Fonti e luoghi di Letteratura Italiana nell’opera di Camões"
     profession: 'Professsione: Sviluppatore Web'
 pt:
-    name: Dante Di Domenico
     birth: Nascido el 11 de Outubro de 1978
     citizenship: Italiano
     address: Bologna, Italia
