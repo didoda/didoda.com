@@ -1,0 +1,19 @@
+{
+  "frontend/main.js": {
+    "file": "assets/main.f7fde1c3.js",
+    "src": "frontend/main.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor.3846fa09.js"
+    ],
+    "css": [
+      "assets/main.1cd07159.css"
+    ],
+    "assets": [
+      "assets/dante.c9516ead.gif"
+    ]
+  },
+  "_vendor.3846fa09.js": {
+    "file": "assets/vendor.3846fa09.js"
+  }
+}
