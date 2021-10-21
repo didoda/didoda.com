@@ -12,4 +12,11 @@ Development mode: `yarn dev`.
 
 Build it with `yarn build`. Then you should update `public/index.html` properly, according to the created assets in `public/assets` folder.
 
+# Environments
+
+This site on Github Pages: https://didoda.github.io/didoda.com/
+This site on didoda.com: http://www.didoda.com
+
+# Thanks
+
 Thanks to https://vitejs.dev, https://tailwindcss.com, https://vuejs.org.
