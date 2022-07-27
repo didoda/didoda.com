@@ -1,0 +1,51 @@
+name: 'javascript'
+
+on:
+  workflow_dispatch:
+    inputs:
+      build:
+        description: 'Do you want to build it? [Y/n]'
+        required: true
+        default: 'n'
+  pull_request:
+    paths:
+      - '**/*.js'
+      - '**/*.scss'
+      - '.github/workflows/javascript.yml'
+      - 'package.json'
+      - 'yarn.lock'
+  push:
+    paths:
+      - '**/*.js'
+      - '**/*.scss'
+      - '.github/workflows/javascript.yml'
+      - 'package.json'
+      - 'yarn.lock'
+
+jobs:
+  javascript-build:
+    name: 'Check javascript build'
+    if: "github.event.inputs.build == 'Y'"
+    runs-on: 'ubuntu-latest'
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+
+    steps:
+      - name: 'Checkout current revision'
+        uses: 'actions/checkout@v2'
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 'Yarn install'
+        run: 'yarn install'
+
+      - name: 'Yarn build'
+        run: 'yarn build'
+
+      - name: 'Run ESLint'
+        run: 'yarn eslint src/Template/Layout/js/**/*.js'
