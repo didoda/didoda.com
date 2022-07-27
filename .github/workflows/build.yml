@@ -1,4 +1,4 @@
-name: 'javascript'
+name: 'build'
 
 on:
   workflow_dispatch:
@@ -11,14 +11,14 @@ on:
     paths:
       - '**/*.js'
       - '**/*.scss'
-      - '.github/workflows/javascript.yml'
+      - '.github/workflows/build.yml'
       - 'package.json'
       - 'yarn.lock'
   push:
     paths:
       - '**/*.js'
       - '**/*.scss'
-      - '.github/workflows/javascript.yml'
+      - '.github/workflows/build.yml'
       - 'package.json'
       - 'yarn.lock'
 
